@@ -1,5 +1,9 @@
 Moisesfreire::Application.routes.draw do
   
+  ActiveAdmin.routes(self)
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   match 'about' => 'application#about', :as => :about
   root :to => "application#home"
   # The priority is based upon order of creation:
