@@ -46,7 +46,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
-    mysql2 (0.2.11)
+    mysql2 (0.2.6-x86-mingw32)
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
     net-sftp (2.0.5)
@@ -74,7 +74,7 @@ GEM
       rake (>= 0.8.7)
       rdoc (~> 3.4)
       thor (~> 0.14.4)
-    rake (0.9.2)
+    rake (0.8.7)
     rdoc (3.9.1)
     thor (0.14.6)
     treetop (1.4.10)
@@ -83,9 +83,10 @@ GEM
     tzinfo (0.3.29)
 
 PLATFORMS
-  ruby
+  x86-mingw32
 
 DEPENDENCIES
   capistrano
-  mysql2 (~> 0.2.6)
+  mysql2 (= 0.2.6)
   rails (= 3.0.9)
+  rake (= 0.8.7)
