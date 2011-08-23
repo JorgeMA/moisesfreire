@@ -31,6 +31,7 @@ h1 {
   color:#FF7901;
   font-size:42px;
   font-weight:bold;
+margin:0 0 20px;
 }
 
 .desc {
@@ -74,7 +75,7 @@ h1 {
   float:left;
   border-left:1px #FC8418 solid;
   border-right:1px #FF912D solid;
-  padding:13px 9px;
+  padding:11px 9px;
   font-size:12px;
   font-weight:bold;
   
