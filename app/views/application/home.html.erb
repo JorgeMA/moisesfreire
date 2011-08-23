@@ -8,14 +8,12 @@
 <div id="news">
   <h2>Notícias</h2>
   <div id="news-box">
-    <div class="news">
-      <h3><a href="#">Decreto Paulista permite quebra de sigilo bancário</a></h3>
-      <p>A exemplo da Receita Federal do Brasil, o fisco paulista também já pode ter acesso a dados das movimentações bancárias de contribuintes sem precisar de ordem judicial</p>
-    </div><!-- .news -->
-    <div class="news">
-      <h3><a href="#">Decreto Paulista permite quebra de sigilo bancário</a></h3>
-      <p>A exemplo da Receita Federal do Brasil, o fisco paulista também já pode ter acesso a dados das movimentações bancárias de contribuintes sem precisar de ordem judicial</p>
-    </div><!-- .news -->
+    <% @news.each do |news| %>
+      <div class="news">
+        <h3><%= link_to news.title, news_path(news) %></h3>
+        <p><%= news.content[0..166] + "..." %></p>
+      </div><!-- .news -->
+    <% end %>
     <div class="clear"></div>
   </div><!-- #news-box -->
 </div><!-- #news -->
