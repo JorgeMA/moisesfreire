@@ -1,5 +1,7 @@
 Moisesfreire::Application.routes.draw do
   
+  resources :bulletins
+
   resources :news
 
   ActiveAdmin.routes(self)
