@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ActiveAdmin.register Value, :as => 'Valores' do
   index do
     column "Nome", :title

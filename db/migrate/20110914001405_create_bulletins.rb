@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class CreateBulletins < ActiveRecord::Migration
   def self.up
     create_table :bulletins do |t|

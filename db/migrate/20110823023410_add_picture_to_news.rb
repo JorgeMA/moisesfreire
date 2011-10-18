@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AddPictureToNews < ActiveRecord::Migration
   def self.up
     add_column :news, :picture_file_name,    :string

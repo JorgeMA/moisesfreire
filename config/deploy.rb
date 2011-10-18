@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 set :user, 'crujar'  # Your dreamhost account's username
 set :domain, 'crujar.com'  # Dreamhost servername where your account is located 
 set :project, 'crujar.com'  # Your application as its called in the repository

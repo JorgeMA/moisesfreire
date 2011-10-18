@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ActiveAdmin.register News, :as => 'Noticias' do
   index do
     column "Título", :title

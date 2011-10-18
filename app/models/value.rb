@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Value < ActiveRecord::Base
   # Validations
   validates :title, :presence => true, :length => {:within => 1..255}

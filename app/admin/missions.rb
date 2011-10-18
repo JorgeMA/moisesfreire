@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ActiveAdmin.register Mission, :as => 'Missoes' do
   index do
     column "Descrição", :description

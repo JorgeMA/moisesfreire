@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ActiveAdmin.register Bulletin, :as => "Boletins Informativos" do
   index do
     column "Mês", :due_to

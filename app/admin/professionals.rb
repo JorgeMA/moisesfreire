@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ActiveAdmin.register Professional, :as => 'Profissionais' do
   index do
     column "Nome", :name

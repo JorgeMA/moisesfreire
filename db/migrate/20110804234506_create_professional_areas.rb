@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class CreateProfessionalAreas < ActiveRecord::Migration
   def self.up
     create_table :professional_areas do |t|

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 Moisesfreire::Application.routes.draw do
   
   resources :bulletins

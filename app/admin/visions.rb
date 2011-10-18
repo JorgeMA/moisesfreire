@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ActiveAdmin.register Vision, :as => 'Visoes' do
   index do
     column "Descrição", :description

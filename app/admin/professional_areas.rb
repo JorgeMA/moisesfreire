@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ActiveAdmin.register ProfessionalArea, :as => 'Atuacao - Areas' do
   index do
     column "Nome", :title
