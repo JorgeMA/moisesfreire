@@ -5,4 +5,19 @@ class ApplicationController < ActionController::Base
   def home
     @news = News.where('section_date <= ?', Date.today).order('section_date DESC, id DESC').limit(2)
   end
+  
+  def company
+    @mission = Mission.last
+    @vision = Vision.last
+    @values = Value.all
+  end
+  
+  def professional_areas
+    @professional_areas = ProfessionalArea.all
+  end
+  
+  def professionals
+    @professionals = Professional.all
+  end
+
 end

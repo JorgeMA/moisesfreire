@@ -1,0 +1,10 @@
+<div id="main">
+  <h1>Áreas de atuação</h1>
+  
+  <% @professional_areas.each do |professional_area| %>
+    <div class="item">
+      <h2><%= professional_area.title %></h2>
+      <p><%= professional_area.description.gsub("\n","<br />").html_safe %></p>
+    </div><!-- .item -->
+  <% end %>
+</div><!-- #main -->

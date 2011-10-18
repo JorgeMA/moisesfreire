@@ -1,0 +1,10 @@
+<div id="main">
+  <h1>Profissionais</h1>
+  
+  <% @professionals.each do |professional| %>
+    <div class="item">
+      <h2><%= professional.name %></h2>
+      <p><%= professional.mini_curriculum.gsub("\n","<br />").html_safe %></p>
+    </div><!-- .item -->
+  <% end %>
+</div><!-- #main -->

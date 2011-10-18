@@ -10,6 +10,10 @@ Moisesfreire::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   match 'about' => 'application#about', :as => :about
+  match 'company' => 'application#company', :as => :company
+  match 'professional_areas' => 'application#professional_areas', :as => :professional_areas
+  match 'professionals' => 'application#professionals', :as => :professionals
+  
   root :to => "application#home"
   # The priority is based upon order of creation:
   # first created -> highest priority.

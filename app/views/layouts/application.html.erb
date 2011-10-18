@@ -12,19 +12,19 @@
         <div id="menu">
           <ul>
             <li>
-              <a href="#">Início</a>
+              <%= link_to 'Início', root_path %>
             </li>
             <li>
-              <a href="#">A empresa</a>
+              <%= link_to 'A empresa', company_path %>
             </li>
             <li>
-              <a href="#">Áreas de atuação</a>
+              <%= link_to 'Áreas de atuação', professional_areas_path %>
             </li>
             <li>
-              <a href="#">Profissionais</a>
+              <%= link_to 'Profissionais', professionals_path %>
             </li>
             <li>
-              <a href="#">Notícias</a>
+              <%= link_to 'Notícias', news_index_path %>
             </li>
             <li>
               <a href="#">Trabalhe conosco</a>
@@ -37,7 +37,7 @@
           
         </div><!-- #menu -->
         <div id="logo">
-          <img src="/images/logo.png" />
+          <%= link_to image_tag('logo.png'), root_path %>
         </div><!-- #logo -->
         <div class="clear"></div><!-- .clear -->
       </div><!-- #header -->

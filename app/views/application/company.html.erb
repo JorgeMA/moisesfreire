@@ -1,0 +1,24 @@
+<div id="main">
+  <h1>A empresa</h1>
+  <div class="item">
+    <h2>Missão</h2>
+    <p><%= @mission.description.gsub("\n","<br />").html_safe %></p>
+  </div><!-- .item -->
+  
+  <div class="item">
+    <h2>Visão</h2>
+    <p><%= @vision.description.gsub("\n","<br />").html_safe %></p>
+  </div><!-- .item -->
+
+  <div class="item">
+    <h2>Valores</h2>
+    
+    <% @values.each do |value| %>
+      <div class="sub-item">
+        <h3><%= value.title %></h3>
+        <p><%= value.description.gsub("\n","<br />").html_safe %></p>
+      </div><!-- .sub-item -->
+    <% end %>
+  </div><!-- .item -->
+  
+</div><!-- #main -->
