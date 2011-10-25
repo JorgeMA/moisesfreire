@@ -1,5 +1,7 @@
 # -*- encoding : utf-8 -*-
-ActiveAdmin.register Mission, :as => 'Missoes' do
+ActiveAdmin.register Mission do
+  menu :label => 'Missões'
+  
   index do
     column "Descrição", :description
   end

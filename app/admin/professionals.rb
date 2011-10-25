@@ -1,5 +1,7 @@
 # -*- encoding : utf-8 -*-
-ActiveAdmin.register Professional, :as => 'Profissionais' do
+ActiveAdmin.register Professional do
+  menu :label => 'Profissionais'
+  
   index do
     column "Nome", :name
   end

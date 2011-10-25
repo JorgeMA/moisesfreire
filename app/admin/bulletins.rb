@@ -1,5 +1,7 @@
 # -*- encoding : utf-8 -*-
-ActiveAdmin.register Bulletin, :as => "Boletins Informativos" do
+ActiveAdmin.register Bulletin do
+  menu :label => 'Boletins Informativos'
+  
   index do
     column "Mês", :due_to
   end

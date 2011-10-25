@@ -1,5 +1,7 @@
 # -*- encoding : utf-8 -*-
-ActiveAdmin.register News, :as => 'Noticias' do
+ActiveAdmin.register News do
+  menu :label => 'Notícias'
+  
   index do
     column "Título", :title
   end

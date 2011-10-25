@@ -1,5 +1,7 @@
 # -*- encoding : utf-8 -*-
-ActiveAdmin.register Vision, :as => 'Visoes' do
+ActiveAdmin.register Vision do
+  menu :label => 'Visões'
+  
   index do
     column "Descrição", :description
   end

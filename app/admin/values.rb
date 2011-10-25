@@ -1,5 +1,7 @@
 # -*- encoding : utf-8 -*-
-ActiveAdmin.register Value, :as => 'Valores' do
+ActiveAdmin.register Value do
+  menu :label => 'Valores'
+  
   index do
     column "Nome", :title
     column "Descrição", :description

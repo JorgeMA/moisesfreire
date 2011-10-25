@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @curriculum.name %>
+</p>
+
+<p>
+  <b>Brief description:</b>
+  <%= @curriculum.brief_description %>
+</p>
+
+
+<%= link_to 'Edit', edit_curriculum_path(@curriculum) %> |
+<%= link_to 'Back', curriculums_path %>

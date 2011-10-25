@@ -1,11 +1,14 @@
 # -*- encoding : utf-8 -*-
 Moisesfreire::Application.routes.draw do
+  ActiveAdmin.routes(self)
   
+  resources :curriculums
+
+  resources :contacts
+
   resources :bulletins
 
   resources :news
-
-  ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 

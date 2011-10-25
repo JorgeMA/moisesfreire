@@ -1,5 +1,7 @@
 # -*- encoding : utf-8 -*-
-ActiveAdmin.register ProfessionalArea, :as => 'Atuacao - Areas' do
+ActiveAdmin.register ProfessionalArea do
+  menu :label => 'Áreas de Atuação'
+  
   index do
     column "Nome", :title
     column "Descrição", :description
