@@ -12,14 +12,14 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label :name, 'Nome' %>
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :brief_description %><br />
+    <%= f.label :brief_description, 'Breve descrição' %>
     <%= f.text_area :brief_description %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Enviar curriculum' %>
   </div>
 <% end %>

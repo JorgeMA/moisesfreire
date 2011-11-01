@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AddAttachmentToCurriculum < ActiveRecord::Migration
   def self.up
       add_column :curriculums, :attachment_file_name,    :string

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <%= stylesheet_link_tag :all %> 
-    <%= javascript_include_tag 'jquery', 'jquery-ui', 'rails', 'aplication' %>
+    <%= stylesheet_link_tag 'reset', 'style' %> 
+    <%= javascript_include_tag 'jquery', 'jquery-ui', 'rails', 'application' %>
     <%= csrf_meta_tag %>
     <title>Moisés Freire</title>
   </head>
@@ -27,7 +27,7 @@
               <%= link_to 'Notícias', news_index_path %>
             </li>
             <li>
-              <a href="#">Trabalhe conosco</a>
+              <%= link_to 'Trabalhe conosco', new_curriculum_path %>
             </li>
           </ul>
           <div class="clear"></div><!-- .clear -->
@@ -41,6 +41,14 @@
         </div><!-- #logo -->
         <div class="clear"></div><!-- .clear -->
       </div><!-- #header -->
+      <% [:notice, :error, :warning, :alert, :success].each do |key| %>
+        <% if flash[key] %>
+          <div id="<%= "message-#{key}" %>" class="message">
+            <p><%= flash[key] %></p>
+          </div>
+        <% end %>
+      <% end %>
+
       <div id="content">
         <%= yield %>
         <div class="clear"></div>
@@ -48,22 +56,22 @@
       <div id="footer">
         <ul>
           <li>
-            <a href="#">Início</a>
+            <%= link_to 'Início', root_path %>
           </li>
           <li>
-            <a href="#">A empresa</a>
+            <%= link_to 'A empresa', company_path %>
           </li>
           <li>
-            <a href="#">Áreas de atuação</a>
+            <%= link_to 'Áreas de atuação', professional_areas_path %>
           </li>
           <li>
-            <a href="#">Profissionais</a>
+            <%= link_to 'Profissionais', professionals_path %>
           </li>
           <li>
-            <a href="#">Notícias</a>
+            <%= link_to 'Notícias', news_index_path %>
           </li>
           <li>
-            <a href="#">Trabalhe conosco</a>
+            <%= link_to 'Trabalhe conosco', new_curriculum_path %>
           </li>
         </ul>
         <div class="clear"></div><!-- .clear -->
