@@ -7,14 +7,14 @@ ActiveAdmin.register News do
     default_actions
   end
   
-  form do |f|
+  form :html => { :enctype => "multipart/form-data" } do |f|
     f.inputs "Principal" do
       f.input :title, :label => "Título"
       f.input :content, :label => "Conteúdo"
     end
     f.inputs "Extra" do
       f.input :section_date, :label => "Data para publicação"
-      f.input :picture, :label => "Foto", :as => :file
+      f.input :picture, :label => "Foto"
     end
     f.buttons
   end
