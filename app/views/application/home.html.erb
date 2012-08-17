@@ -11,7 +11,7 @@
     <% @news.each do |news| %>
       <div class="news">
         <h3><%= link_to news.title, news_path(news) %></h3>
-        <p><%= news.content[0..166] + "..." %></p>
+        <p><%= simple_format(news.content[0..166] + "...") %></p>
       </div><!-- .news -->
     <% end %>
     <div class="clear"></div>
