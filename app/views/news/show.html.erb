@@ -1,20 +1,6 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <b>Title:</b>
-  <%= @news.title %>
-</p>
-
-<p>
-  <b>Content:</b>
-  <%= @news.content %>
-</p>
-
-<p>
-  <b>Section date:</b>
-  <%= @news.section_date %>
-</p>
-
-
-<%= link_to 'Edit', edit_news_path(@news) %> |
-<%= link_to 'Back', news_index_path %>
+<div id="main">
+  <div class="item">
+    <h2><%= @news.title %></h2>
+    <p><%= simple_format @news.content.gsub("\n", "<br />") %></p>
+  </div><!-- .item -->
+</div><!-- #main -->

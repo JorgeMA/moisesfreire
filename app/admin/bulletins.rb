@@ -4,6 +4,7 @@ ActiveAdmin.register Bulletin do
   
   index do
     column "Mês", :due_to
+    default_actions
   end
   
   form do |f|

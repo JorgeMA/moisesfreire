@@ -4,6 +4,7 @@ ActiveAdmin.register Vision do
   
   index do
     column "Descrição", :description
+    default_actions
   end
   
   form do |f|

@@ -4,6 +4,7 @@ ActiveAdmin.register Professional do
   
   index do
     column "Nome", :name
+    default_actions
   end
   
   form do |f|

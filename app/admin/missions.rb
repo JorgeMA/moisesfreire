@@ -4,6 +4,7 @@ ActiveAdmin.register Mission do
   
   index do
     column "Descrição", :description
+    default_actions
   end
   
   form do |f|

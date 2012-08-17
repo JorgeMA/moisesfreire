@@ -4,6 +4,7 @@ ActiveAdmin.register News do
   
   index do
     column "Título", :title
+    default_actions
   end
   
   form do |f|

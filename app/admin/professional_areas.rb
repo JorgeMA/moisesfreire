@@ -5,6 +5,7 @@ ActiveAdmin.register ProfessionalArea do
   index do
     column "Nome", :title
     column "Descrição", :description
+    default_actions
   end
   
   form do |f|
