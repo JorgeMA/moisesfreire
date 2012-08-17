@@ -14,7 +14,7 @@ ActiveAdmin.register News do
     end
     f.inputs "Extra" do
       f.input :section_date, :label => "Data para publicação"
-      f.input :picture, :label => "Foto"
+      f.input :picture, :label => "Foto", :as => :file
     end
     f.buttons
   end
