@@ -12,9 +12,22 @@
         <div id="menu">
           <ul>
             <li>
-              <span style="color:white; text-shadow: 1px -1px 1px black;">
-                Rua Bambuí, 242, Serra. Belo Horizonte, Minas Gerais. Telefone: (31) 3287-1412.
-              </span>
+              <%= link_to 'Início', root_path %>
+            </li>
+            <li>
+              <%= link_to 'A empresa', company_path %>
+            </li>
+            <li>
+              <%= link_to 'Áreas de atuação', professional_areas_path %>
+            </li>
+            <li>
+              <%= link_to 'Profissionais', professionals_path %>
+            </li>
+            <li>
+              <%= link_to 'Notícias', news_index_path %>
+            </li>
+            <li>
+              <%= link_to 'Trabalhe conosco', new_curriculum_path %>
             </li>
           </ul>
           <div class="clear"></div><!-- .clear -->
@@ -43,22 +56,9 @@
       <div id="footer">
         <ul>
           <li>
-            <%= link_to 'Início', root_path %>
-          </li>
-          <li>
-            <%= link_to 'A empresa', company_path %>
-          </li>
-          <li>
-            <%= link_to 'Áreas de atuação', professional_areas_path %>
-          </li>
-          <li>
-            <%= link_to 'Profissionais', professionals_path %>
-          </li>
-          <li>
-            <%= link_to 'Notícias', news_index_path %>
-          </li>
-          <li>
-            <%= link_to 'Trabalhe conosco', new_curriculum_path %>
+            <span style="color:white; text-shadow: 1px -1px 1px black;">
+              Rua Bambuí, 242, Serra. Belo Horizonte, Minas Gerais. Telefone: (31) 3287-1412.
+            </span>
           </li>
         </ul>
         <div class="clear"></div><!-- .clear -->
