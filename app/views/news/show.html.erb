@@ -3,8 +3,9 @@
     <h2><%= @news.title %></h2>
     <p>
       <% if @news.picture %>
-        <%= image_tag @news.picture.url(:medium), :options => { :align => "center" } %>
-        <br />
+        <%#= #image_tag @news.picture.url(:medium), :options => { :align => "center" } %>
+        <!-- <br />
+        <br /> -->
       <% end %>
     <%= simple_format @news.content.gsub("\n", "<br />") %></p>
   </div><!-- .item -->
