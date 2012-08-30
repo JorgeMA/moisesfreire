@@ -17,7 +17,7 @@ class ApplicationController < ActionController::Base
   end
   
   def professionals
-    @professionals = Professional.all
+    @professionals = Professional.order('name').all
   end
 
 end
