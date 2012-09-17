@@ -6,6 +6,7 @@
       <h2><%= news.title %></h2>
       <p class="picture"><%= image_tag news.picture(:medium) %></p>
       <p><%= news.content.gsub("\n","<br />").html_safe %></p>
+      <div class="clear"></div><!-- .clear -->
     </div><!-- .item -->
   <% end %>
 </div><!-- #main -->

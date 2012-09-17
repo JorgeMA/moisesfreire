@@ -187,7 +187,7 @@ margin:0 0 20px;
   #main .item {
     background:#F8F8F8;
     border:1px #DDD solid;
-    padding:20px;
+    padding: 25px;
     margin:0 0 20px;
     text-shadow:0 1px 0 #FFF;
     
@@ -207,7 +207,7 @@ margin:0 0 20px;
     padding:15px 20px;
     background:#F1F1F1;
     border-bottom:1px #DDD solid;
-    margin:-20px -20px 10px;
+    margin:-25px -25px 15px;
     
     border-radius:5px 5px 0 0;
     -moz-border-radius:5px 5px 0 0;
@@ -217,6 +217,12 @@ margin:0 0 20px;
   #main .item .picture {
     float:left;
     margin:0 10px 10px 0;
+  }
+
+  #main .item p {
+    line-height: 25px;
+    font-size: 14px;
+    text-align: justify;
   }
   
   #main .item .picture img {
